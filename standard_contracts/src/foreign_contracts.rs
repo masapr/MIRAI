@@ -1601,6 +1601,156 @@ pub mod core {
             atomic_cxchg!(atomic_cxchgweak_acqrel_relaxed__i128, i128);
             atomic_cxchg!(atomic_cxchgweak_acqrel_relaxed__u128, u128);
 
+            // pub unsafe fn atomic_cxchg_relaxed_acquire<T>(
+            //     dst: *mut T,
+            //     old: T,
+            //     src: T,
+            // ) -> (T, bool) {
+            //     if abstract_value!(true) {
+            //         *dst = src;
+            //         (old, true)
+            //     } else {
+            //         (*dst, false)
+            //     }
+            // }
+            atomic_cxchg!(atomic_cxchg_relaxed_acquire__i8, i8);
+            atomic_cxchg!(atomic_cxchg_relaxed_acquire__i16, i16);
+            atomic_cxchg!(atomic_cxchg_relaxed_acquire__i32, i32);
+            atomic_cxchg!(atomic_cxchg_relaxed_acquire__i64, i64);
+            atomic_cxchg!(atomic_cxchg_relaxed_acquire__isize, isize);
+            atomic_cxchg!(atomic_cxchg_relaxed_acquire__u8, u8);
+            atomic_cxchg!(atomic_cxchg_relaxed_acquire__u16, u16);
+            atomic_cxchg!(atomic_cxchg_relaxed_acquire__u32, u32);
+            atomic_cxchg!(atomic_cxchg_relaxed_acquire__u64, u64);
+            atomic_cxchg!(atomic_cxchg_relaxed_acquire, usize);
+            atomic_cxchg!(atomic_cxchg_relaxed_acquire__i128, i128);
+            atomic_cxchg!(atomic_cxchg_relaxed_acquire__u128, u128);
+
+            // pub unsafe fn atomic_cxchg_relaxed_seqcst<T>(
+            //     dst: *mut T,
+            //     old: T,
+            //     src: T,
+            // ) -> (T, bool) {
+            //     if abstract_value!(true) {
+            //         *dst = src;
+            //         (old, true)
+            //     } else {
+            //         (*dst, false)
+            //     }
+            // }
+            atomic_cxchg!(atomic_cxchg_relaxed_seqcst__i8, i8);
+            atomic_cxchg!(atomic_cxchg_relaxed_seqcst__i16, i16);
+            atomic_cxchg!(atomic_cxchg_relaxed_seqcst__i32, i32);
+            atomic_cxchg!(atomic_cxchg_relaxed_seqcst__i64, i64);
+            atomic_cxchg!(atomic_cxchg_relaxed_seqcst__isize, isize);
+            atomic_cxchg!(atomic_cxchg_relaxed_seqcst__u8, u8);
+            atomic_cxchg!(atomic_cxchg_relaxed_seqcst__u16, u16);
+            atomic_cxchg!(atomic_cxchg_relaxed_seqcst__u32, u32);
+            atomic_cxchg!(atomic_cxchg_relaxed_seqcst__u64, u64);
+            atomic_cxchg!(atomic_cxchg_relaxed_seqcst, usize);
+            atomic_cxchg!(atomic_cxchg_relaxed_seqcst__i128, i128);
+            atomic_cxchg!(atomic_cxchg_relaxed_seqcst__u128, u128);
+
+            // pub unsafe fn atomic_cxchg_acquire_seqcst<T>(
+            //     dst: *mut T,
+            //     old: T,
+            //     src: T,
+            // ) -> (T, bool) {
+            //     if abstract_value!(true) {
+            //         *dst = src;
+            //         (old, true)
+            //     } else {
+            //         (*dst, false)
+            //     }
+            // }
+            atomic_cxchg!(atomic_cxchg_acquire_seqcst__i8, i8);
+            atomic_cxchg!(atomic_cxchg_acquire_seqcst__i16, i16);
+            atomic_cxchg!(atomic_cxchg_acquire_seqcst__i32, i32);
+            atomic_cxchg!(atomic_cxchg_acquire_seqcst__i64, i64);
+            atomic_cxchg!(atomic_cxchg_acquire_seqcst__isize, isize);
+            atomic_cxchg!(atomic_cxchg_acquire_seqcst__u8, u8);
+            atomic_cxchg!(atomic_cxchg_acquire_seqcst__u16, u16);
+            atomic_cxchg!(atomic_cxchg_acquire_seqcst__u32, u32);
+            atomic_cxchg!(atomic_cxchg_acquire_seqcst__u64, u64);
+            atomic_cxchg!(atomic_cxchg_acquire_seqcst, usize);
+            atomic_cxchg!(atomic_cxchg_acquire_seqcst__i128, i128);
+            atomic_cxchg!(atomic_cxchg_acquire_seqcst__u128, u128);
+
+            // pub unsafe fn atomic_cxchg_release_acquire<T>(
+            //     dst: *mut T,
+            //     old: T,
+            //     src: T,
+            // ) -> (T, bool) {
+            //     if abstract_value!(true) {
+            //         *dst = src;
+            //         (old, true)
+            //     } else {
+            //         (*dst, false)
+            //     }
+            // }
+            atomic_cxchg!(atomic_cxchg_release_acquire__i8, i8);
+            atomic_cxchg!(atomic_cxchg_release_acquire__i16, i16);
+            atomic_cxchg!(atomic_cxchg_release_acquire__i32, i32);
+            atomic_cxchg!(atomic_cxchg_release_acquire__i64, i64);
+            atomic_cxchg!(atomic_cxchg_release_acquire__isize, isize);
+            atomic_cxchg!(atomic_cxchg_release_acquire__u8, u8);
+            atomic_cxchg!(atomic_cxchg_release_acquire__u16, u16);
+            atomic_cxchg!(atomic_cxchg_release_acquire__u32, u32);
+            atomic_cxchg!(atomic_cxchg_release_acquire__u64, u64);
+            atomic_cxchg!(atomic_cxchg_release_acquire, usize);
+            atomic_cxchg!(atomic_cxchg_release_acquire__i128, i128);
+            atomic_cxchg!(atomic_cxchg_release_acquire__u128, u128);
+
+            // pub unsafe fn atomic_cxchg_release_seqcst<T>(
+            //     dst: *mut T,
+            //     old: T,
+            //     src: T,
+            // ) -> (T, bool) {
+            //     if abstract_value!(true) {
+            //         *dst = src;
+            //         (old, true)
+            //     } else {
+            //         (*dst, false)
+            //     }
+            // }
+            atomic_cxchg!(atomic_cxchg_release_seqcst__i8, i8);
+            atomic_cxchg!(atomic_cxchg_release_seqcst__i16, i16);
+            atomic_cxchg!(atomic_cxchg_release_seqcst__i32, i32);
+            atomic_cxchg!(atomic_cxchg_release_seqcst__i64, i64);
+            atomic_cxchg!(atomic_cxchg_release_seqcst__isize, isize);
+            atomic_cxchg!(atomic_cxchg_release_seqcst__u8, u8);
+            atomic_cxchg!(atomic_cxchg_release_seqcst__u16, u16);
+            atomic_cxchg!(atomic_cxchg_release_seqcst__u32, u32);
+            atomic_cxchg!(atomic_cxchg_release_seqcst__u64, u64);
+            atomic_cxchg!(atomic_cxchg_release_seqcst, usize);
+            atomic_cxchg!(atomic_cxchg_release_seqcst__i128, i128);
+            atomic_cxchg!(atomic_cxchg_release_seqcst__u128, u128);
+
+            // pub unsafe fn atomic_cxchg_acqrel_seqcst<T>(
+            //     dst: *mut T,
+            //     old: T,
+            //     src: T,
+            // ) -> (T, bool) {
+            //     if abstract_value!(true) {
+            //         *dst = src;
+            //         (old, true)
+            //     } else {
+            //         (*dst, false)
+            //     }
+            // }
+            atomic_cxchg!(atomic_cxchg_acqrel_seqcst__i8, i8);
+            atomic_cxchg!(atomic_cxchg_acqrel_seqcst__i16, i16);
+            atomic_cxchg!(atomic_cxchg_acqrel_seqcst__i32, i32);
+            atomic_cxchg!(atomic_cxchg_acqrel_seqcst__i64, i64);
+            atomic_cxchg!(atomic_cxchg_acqrel_seqcst__isize, isize);
+            atomic_cxchg!(atomic_cxchg_acqrel_seqcst__u8, u8);
+            atomic_cxchg!(atomic_cxchg_acqrel_seqcst__u16, u16);
+            atomic_cxchg!(atomic_cxchg_acqrel_seqcst__u32, u32);
+            atomic_cxchg!(atomic_cxchg_acqrel_seqcst__u64, u64);
+            atomic_cxchg!(atomic_cxchg_acqrel_seqcst, usize);
+            atomic_cxchg!(atomic_cxchg_acqrel_seqcst__i128, i128);
+            atomic_cxchg!(atomic_cxchg_acqrel_seqcst__u128, u128);
+
             // pub unsafe fn atomic_load_seqcst<T>(src: *const T) -> T
             // where
             //     T: Copy,
